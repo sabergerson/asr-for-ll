@@ -1,0 +1,4 @@
+# Environment setup
+
+# Install packages via terminal
+pip install --upgrade --quiet pip datasets[audio] transformers accelerate evaluate tensorboard huggingface_hub

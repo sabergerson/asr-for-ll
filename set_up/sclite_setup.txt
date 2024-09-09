@@ -1,0 +1,28 @@
+# SCLITE setup from terminal
+
+# Clone GitHub repository
+git clone https://github.com/usnistgov/SCTK.git
+cd SCTK
+
+# Install make
+sudo apt-get update
+sudo apt-get install build-essential
+
+# Install tools
+make config
+make all
+make check
+make install
+make doc
+
+# Add SCLITE path to bash
+echo 'export PATH=$PATH:/SCTK/bin' >> ~/.bashrc
+OR
+echo 'export PATH=$PATH:/workspace/EdAcc/kaldi/tools/sctk/bin' >> ~/.bashrc
+
+source ~/.bashrc
+sclite -h
+
+# Run evaluation (replace file names)
+sclite -h HYPOTHESIS.txt -r REFERENCE.txt -i rm -o all stdout > RESULTS.txt
+
