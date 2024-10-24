@@ -6,22 +6,22 @@ For environment set up instructions see the folder setup.
 
 #### High-level folder contents:
 
-- edacc: Python files for processing EdAcc data, fine-tuning Whisper using processed EdAcc data, and evaluating Whisper zero-shot and after fine-tuning on EdAcc data.   
+- edacc: Jupyter Notebook files for processing EdAcc data, fine-tuning Whisper using processed EdAcc data, and evaluating Whisper zero-shot and after fine-tuning on EdAcc data.   
 
 - setup: Instructions for installing required packages for data processing, fine-tuning and evaluation with SCLITE via the terminal.  
 
-- ume_erj: Python files for processing UME-ERJ data, fine-tuning Whisper using processed UME-ERJ data, and evaluating Whisper zero-shot and after fine-tuning on UME-ERJ data.   
+- ume_erj: Jupyter Notebook files for processing UME-ERJ data, fine-tuning Whisper using processed UME-ERJ data, and evaluating Whisper zero-shot and after fine-tuning on UME-ERJ data.   
 
 - whisper_utils: Python and JSON files from [Whisper](https://github.com/openai/whisper) used for transcript standardization.
 
 #### Guide to all folders & files:
 
-- edacc/data_processing: Python files for processing EdAcc data for use with Whisper.  
+- edacc/data_processing: Jupyter Notebook files for processing EdAcc data for use with Whisper.  
 
   - edacc/data_processing/edacc_raw.ipynb: Standardizes and formats EdAcc data for evaluations with Whisper. Uploads data to HuggingFace.
   - edacc/data_processing/edacc_whisper.ipynb: Applies Whisper pre-processing to prepare EdAcc data for use in Whisper fine-tuning. Uploads data to HuggingFace.  
 
-- edacc/ft: Python files for running Whisper fine-tuning and evaluation with EdAcc data and text files of reference data, predictions, and WER results.
+- edacc/ft: Jupyter Notebook files for running Whisper fine-tuning and evaluation with EdAcc data and text files of reference data, predictions, and WER results.
 
   - edacc/ft/EdAcc1000/ft_run/edacc_ft.ipynb: Runs fine-tuning with EdAcc dev set for 1000 iterations. 
   - edacc/ft/EdAcc4000/ft_run/edacc_ft.ipynb: Runs fine-tuning with EdAcc dev set for 4000 iterations. 
@@ -35,7 +35,7 @@ For environment set up instructions see the folder setup.
   - edacc/ft/EdAcc600/output/sclite/ft_results.txt: WER and results breakdown computed by SCLITE for EdAcc test set using Whisper fine-tuned on EdAcc dev set for 600 iterations.
   - edacc/ft/EdAcc600/edacc_test.ipynb: Produces EdAcc test set predicted transcripts using Whisper fine-tuned on EdAcc dev set for 600 iterations.
 
-- edacc/zero_shot: Python files for running Whisper zero-shot and evaluation with EdAcc data and text files of reference data, predictions, and WER results.
+- edacc/zero_shot: Jupyter Notebook files for running Whisper zero-shot and evaluation with EdAcc data and text files of reference data, predictions, and WER results.
 
   - edacc/zero_shot/output/sclite/dev_results.txt: WER and results breakdown computed by SCLITE for EdAcc dev set using Whisper zero-shot.
   - edacc/zero_shot/output/sclite/test_results.txt: WER and results breakdown computed by SCLITE for EdAcc test set using Whisper zero-shot.
@@ -49,12 +49,12 @@ For environment set up instructions see the folder setup.
 - setup/environment.txt: All requirements for running data processing, zero-shot, and fine-tuning code.
 - setup/sclite_setup.txt: All requirements for running SCLITE for evaluation. 
 
-- ume_erj/data_processing: Python files for processing EdAcc data for use with Whisper.
+- ume_erj/data_processing: Jupyter Notebook files for processing EdAcc data for use with Whisper.
 
   - ume_erj/data_processing/ume_erj_raw.ipynb: Standardizes and formats UME-ERJ data for evaluations with Whisper. Uploads data to HuggingFace.
   - ume_erj/data_processing/ume_erj_whisper.ipynb: Applies Whisper pre-processing to prepare UME-ERJ data for use in Whisper fine-tuning. Uploads data to HuggingFace.
 
-- ume_erj/ft: Python files for running Whisper fine-tuning and evaluation with UME-ERJ data and text files of reference data, predictions, and WER results.
+- ume_erj/ft: Jupyter Notebook files for running Whisper fine-tuning and evaluation with UME-ERJ data and text files of reference data, predictions, and WER results.
 
   - ume_erj/ft/ft_run/ume_erj_ft_test.ipynb: Runs fine-tuning with UME-ERJ train set for 3600 iterations tracking test set metrics. 
   - ume_erj/ft/ft_run/ume_erj_ft_val.ipynb:  Runs fine-tuning with UME-ERJ train set for 3600 iterations tracking validation set metrics. 
@@ -63,7 +63,7 @@ For environment set up instructions see the folder setup.
   - ume_erj/ft/output/ft_references.txt: UME-ERJ test set reference transcripts.
   - ume_erj/ft/ume_erj_test.ipynb: Produces UME-ERJ test set predicted transcripts using Whisper fine-tuned on UME-ERJ train set for 3600 iterations.
 
-- ume_erj/zero_shot: Python files for running Whisper zero-shot and evaluation with UME-ERJ data and text files of reference data, predictions, and WER results.
+- ume_erj/zero_shot: Jupyter Notebook files for running Whisper zero-shot and evaluation with UME-ERJ data and text files of reference data, predictions, and WER results.
 
   - ume_erj/zero_shot/output/sclite/dev_results.txt: WER and results breakdown computed by SCLITE for UME-ERJ train set using Whisper zero-shot.
   - ume_erj/zero_shot/output/sclite/test_results.txt: WER and results breakdown computed by SCLITE for UME-ERJ test set using Whisper zero-shot.
