@@ -1,16 +1,14 @@
-## ASR for Language Learning Data Processing and Fine-Tuning  
+## ASR for Language Learning with Whisper
 
-edacc: all data processing, fine-tuning, and evaluation scripts  
-ume_erj: all data processing, fine-tuning, and evaluation scripts  
-whisper_utils: Whisper text normalization files used for evaluation (source: github.com/openai/whisper)  
-set_up: environment and SCLITE setup instructions 
+This repository contains code for fine-tuning and evaluating OpenAI's Whisper (https://github.com/openai/whisper) using two ASR datasets, EdAcc (https://groups.inf.ed.ac.uk/edacc/) and UME-ERJ (https://research.nii.ac.jp/src/en/UME-ERJ.html). EdAcc contains multi-accented conversational English speech, and UME-ERJ contains Japanese-accented read English speech. This code was developed as part of a thesis project at UCL in collaboration with DMM Eikaiwa. The purpose of the code is to evaluate the resulting models on Japanese-accented conversational English speech data collected and annotated by DMM Eikaiwa. The corresponding datasets and models for this code can be found at https://huggingface.co/sage-bergerson. All code, data, and models relating to or using data collected by DMM Eikaiwa are not public.   
 
+For environment set up instructions see the folder setup.  
 
 #### High-level folder contents:
 
 - edacc: Python files for processing EdAcc data, fine-tuning Whisper using processed EdAcc data, and evaluating Whisper zero-shot and after fine-tuning on EdAcc data.   
 
-- setup: Instructions for installing required packages via the terminal.  
+- setup: Instructions for installing required packages for data processing, fine-tuning and evaluation with SCLITE via the terminal.  
 
 - ume_erj: Python files for processing UME-ERJ data, fine-tuning Whisper using processed UME-ERJ data, and evaluating Whisper zero-shot and after fine-tuning on UME-ERJ data.   
 
