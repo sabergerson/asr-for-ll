@@ -1,6 +1,6 @@
 ## ASR for Language Learning with Whisper
 
-This repository contains code for fine-tuning and evaluating OpenAI's [Whisper](https://github.com/openai/whisper) (https://github.com/openai/whisper) using two ASR datasets, EdAcc (https://groups.inf.ed.ac.uk/edacc/) and UME-ERJ (https://research.nii.ac.jp/src/en/UME-ERJ.html). EdAcc contains multi-accented conversational English speech, and UME-ERJ contains Japanese-accented read English speech. This code was developed as part of a thesis project at UCL in collaboration with DMM Eikaiwa. The purpose of the code is to evaluate the resulting models on Japanese-accented conversational English speech data collected and annotated by DMM Eikaiwa. The corresponding datasets and models for this code can be found at https://huggingface.co/sage-bergerson. All code, data, and models relating to or using data collected by DMM Eikaiwa are not public.   
+This repository contains code for fine-tuning and evaluating OpenAI's [Whisper](https://github.com/openai/whisper) using two ASR datasets, [EdAcc](https://groups.inf.ed.ac.uk/edacc/) and [UME-ERJ](https://research.nii.ac.jp/src/en/UME-ERJ.html). EdAcc contains multi-accented conversational English speech, and UME-ERJ contains Japanese-accented read English speech. This code was developed as part of a thesis project at UCL in collaboration with DMM Eikaiwa. The purpose of the code is to evaluate the resulting models on Japanese-accented conversational English speech data collected and annotated by DMM Eikaiwa. The corresponding datasets and models for this code can be found at [huggingface.co/sage-bergerson](https://huggingface.co/sage-bergerson). All code, data, and models relating to or using data collected by DMM Eikaiwa are not public.   
 
 For environment set up instructions see the folder setup.  
 
@@ -12,7 +12,7 @@ For environment set up instructions see the folder setup.
 
 - ume_erj: Python files for processing UME-ERJ data, fine-tuning Whisper using processed UME-ERJ data, and evaluating Whisper zero-shot and after fine-tuning on UME-ERJ data.   
 
-- whisper_utils: Python and JSON files from https://github.com/openai/whisper used for transcript standardization.
+- whisper_utils: Python and JSON files from [Whisper](https://github.com/openai/whisper) used for transcript standardization.
 
 #### Guide to all folders & files:
 
