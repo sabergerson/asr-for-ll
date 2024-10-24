@@ -18,10 +18,10 @@ set_up: environment and SCLITE setup instructions
 
 #### Guide to all folders & files:
 
-- edacc/data_processing: Python files for processing EdAcc data for use with Whisper.
+- edacc/data_processing: Python files for processing EdAcc data for use with Whisper.  
 
--- edacc/data_processing/edacc_raw.ipynb: Standardizes and formats EdAcc data for evaluations with Whisper. Uploads data to HuggingFace.
--- edacc/data_processing/edacc_whisper.ipynb: Applies Whisper pre-processing to prepare EdAcc data for use in Whisper fine-tuning. Uploads data to HuggingFace.
+ - edacc/data_processing/edacc_raw.ipynb: Standardizes and formats EdAcc data for evaluations with Whisper. Uploads data to HuggingFace.
+ - edacc/data_processing/edacc_whisper.ipynb: Applies Whisper pre-processing to prepare EdAcc data for use in Whisper fine-tuning. Uploads data to HuggingFace.  
 
 edacc/ft: Python files for running Whisper fine-tuning and evaluation with EdAcc data and text files of reference data, predictions, and WER results.
 
